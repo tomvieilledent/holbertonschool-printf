@@ -1,5 +1,13 @@
 #include <stdarg.h>
 
+/**
+ * _printf - Produces output according to a format.
+ * @format: The format string.
+ * @...: Additional arguments to format.
+ *
+ * Return: The number of characters printed.
+ */
+
 int _printf(const char *format, ...)
 
 {
@@ -7,7 +15,7 @@ int _printf(const char *format, ...)
 
 	int i = 0;
 
-	while (format[i] != '\0')
+	while (format[i])
 	{
 		if (format[i] == '%')
 		{
