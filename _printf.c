@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 					write(1, &format[i], 1);
 					write(1, &format[i + 1], 1);
 					i += 2;
-					len++;
+					len += 2;
 					continue;
 				}
 				len_func += test(arg_list);
