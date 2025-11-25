@@ -12,6 +12,10 @@ int printf_s(va_list arg_list)
 char *s = va_arg(arg_list, char *);
 int i = 0;
 
+if (s[i] == NULL)
+	write(1, "(null)", 6);
+	return (6);
+
 while (s[i])
 {
 	write(1, &s[i], 1);
