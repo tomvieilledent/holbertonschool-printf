@@ -12,10 +12,10 @@ int _printf(const char *format, ...)
 {
 	va_list arg_list;
 
-	va_start(arg_list, format);
-
 	int i = 0, len = 0, len_func = 0;
 	int (*test)(va_list);
+
+	va_start(arg_list, format);
 
 	while (format[i] != '\0')
 	{

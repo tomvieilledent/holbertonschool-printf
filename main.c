@@ -15,15 +15,15 @@ int main(void)
 
 	/* test character*/
 	t = _printf("test %c %c test\n", s, s);
-	printf("%d", t);
+	printf("%d\n", t);
 
 	/* test string */
 	t = _printf("test %s %s test\n", str, str);
-	printf("%d", t);
+	printf("%d\n", t);
 
 	/* test % */
 	t = _printf("test %% %s test\n", str);
-	printf("%d", t);
+	printf("%d\n", t);
 
 	return (0);
 }
