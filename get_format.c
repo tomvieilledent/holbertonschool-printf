@@ -1,27 +1,26 @@
-#include <string.h>
 #include "main.h"
 
 /**
  * get_format - Selects the correct function for a format specifier.
- * @s: The format specifier string (e.g., "%s", "%c").
+ * @specifier: The format specifier string (e.g., "%s", "%c").
  *
  * Return: Pointer to the function for the specifier, or NULL if not found.
  */
 
-int (*get_format(char s))(va_list)
+int (*get_format(char letter))(va_list)
 {
-	format_t format[] = {
-		{"s", printf_s},
-		{"c", printf_c},
-		{NULL, NULL}};
+	format_t arg_list[] = {
+		{'s', printf_s},
+		{'c', printf_c},
+		{'%', printf_37},
+		{'\0', NULL}};
 	int i = 0;
 
-	while (format[i].specifier != NULL)
+	while (arg_list[i].specifier)
 	{
-		if (strcmp(format[i].specifier, s) == 0)
-			return (format[i].f);
+		if (arg_list[i].specifier == letter)
+			return (arg_list[i].fonction);
 		i++;
 	}
-
 	return (NULL);
 }
