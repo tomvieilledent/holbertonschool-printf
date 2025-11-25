@@ -21,10 +21,17 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] == 'c' || format[i + 1] == 's' || format[i + 1] == '%')
+			if (format[i + 1])
 			{
 				test = get_format(format[i + 1]);
-
+				if (test == NULL)
+				{
+					write(1, &format[i], 1);
+					write(1, &format[i + 1], 1);
+					i += 2;
+					len++;
+					continue;
+				}
 				len_func += test(arg_list);
 				i += 2;
 			}

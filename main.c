@@ -33,5 +33,10 @@ int main(void)
 	t = _printf("%s\n", str_null);
 	printf("%d\n\n", t);
 
+	/* test */
+	t = _printf("%!\n");
+	printf("%d", t);
+
+
 	return (0);
 }
