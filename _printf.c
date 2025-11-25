@@ -11,7 +11,6 @@ int _printf(const char *format, ...)
 
 {
 	va_list arg_list;
-
 	int i = 0, len = 0, len_func = 0;
 	int (*test)(va_list);
 
@@ -37,7 +36,6 @@ int _printf(const char *format, ...)
 			}
 			else
 				return (-1);
-
 		}
 		else
 		{
