@@ -14,15 +14,19 @@ int main(void)
 	int t;
 
 	/* test character*/
-	t = _printf("test %c %c test\n", s, s);
+	t = _printf("%c\n", s);
 	printf("%d\n", t);
 
 	/* test string */
-	t = _printf("test %s %s test\n", str, str);
+	t = _printf("%s\n", str);
 	printf("%d\n", t);
 
 	/* test % */
-	t = _printf("test %% %s test\n", str);
+	t = _printf("%%\n", str);
+	printf("%d\n", t);
+
+	/* test % */
+	t = _printf("test\n");
 	printf("%d\n", t);
 
 	return (0);

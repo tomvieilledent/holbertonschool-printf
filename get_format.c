@@ -2,7 +2,7 @@
 
 /**
  * get_format - Selects the correct function for a format specifier.
- * @specifier: The format specifier string (e.g., "%s", "%c").
+ * @letter: The format specifier character (e.g., 's', 'c').
  *
  * Return: Pointer to the function for the specifier, or NULL if not found.
  */

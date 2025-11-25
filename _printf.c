@@ -28,11 +28,16 @@ int _printf(const char *format, ...)
 				len_func += test(arg_list);
 				i += 2;
 			}
+			else
+				return (-1);
 
 		}
-		_putchar(format[i]);
-		i++;
-		len++;
+		else
+		{
+			_putchar(format[i]);
+			i++;
+			len++;
+		}
 	}
 	va_end(arg_list);
 	return (len + len_func);
