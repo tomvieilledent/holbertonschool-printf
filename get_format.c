@@ -12,6 +12,7 @@ int (*get_format(char letter))(va_list)
 	format_t arg_list[] = {
 		{'s', printf_s},
 		{'c', printf_c},
+		{'d', printf_d},
 		{'%', printf_37},
 		{'\0', NULL}};
 	int i = 0;

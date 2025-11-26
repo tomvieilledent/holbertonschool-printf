@@ -1,0 +1,25 @@
+.TH _PRINTF  "Nov 2025" "1.0" "Holberton School"
+.SH NAME
+_printf - format and print data
+.SH SYNOPSIS
+int _printf(const char *format, ...);
+.PP
+This is a function copied from the original printf for the purpose of an exercise, with certain format specifiers.
+.SH DESCRIPTION
+Print ARGUMENTS(s) according to FORMAT, or execute according to OPTION:
+.PP
+%%     print a single %
+.PP
+%c     print a single character
+.PP
+%s     print a string
+.PP
+%d     print an integer
+.PP
+%i     print an integer
+.SH AUTHOR
+MOUYSSET Alexandre 
+.PP
+VIEILLEDENT Tom
+.SH SEE ALSO
+man printf
