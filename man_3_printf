@@ -17,6 +17,8 @@ Print ARGUMENTS(s) according to FORMAT, or execute according to OPTION:
 %d     print an integer
 .PP
 %i     print an integer
+.PP
+%b     print in binary
 .SH AUTHOR
 MOUYSSET Alexandre -- VIEILLEDENT Tom
 .SH SEE ALSO
