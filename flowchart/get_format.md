@@ -21,7 +21,7 @@ flowchart TD
     
     Specifier_percent -->|No| Specifier_b{Specifier = b?}
     Specifier_b -->|Yes| Click_b[Return printf_b]
-    click Click_b "https://github.com/tomvieilledent/holbertonschool-printf/blob/main/flowchart/printf_b.md" "Flowchart printf_b"
+    click Click_b "https://github.com/tomvieilledent/holbertonschool-printf/blob/main/flowchart/printf-b.md" "Flowchart printf_b"
     
     Specifier_b -->|No| Next[Move to next specifier in table]
     Next --> CheckNext
