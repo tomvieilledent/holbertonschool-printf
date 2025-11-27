@@ -47,10 +47,12 @@ int printf_b(va_list arg_list)
 		return (1);
 	}
 
-	while ((_pow(2, exp)) < num)
+	while ((_pow(2, exp)) <= num && exp < 32)
 		exp++;
+
 	len = exp;
 	exp--;
+
 
 	while (exp >= 0)
 	{
