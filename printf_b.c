@@ -9,9 +9,9 @@
  *         Returns 0 if exp is negative.
  */
 
-int _pow(int number, int exp)
+unsigned int _pow(int number, int exp)
 {
-	int result = 1;
+	unsigned int result = 1;
 
 	if (exp < 0)
 		return (0);
@@ -34,7 +34,7 @@ int _pow(int number, int exp)
 int printf_b(va_list arg_list)
 {
 	unsigned int num = va_arg(arg_list, unsigned int);
-	unsigned int next;
+	unsigned int next, power;
 	int exp;
 	int len;
 
@@ -54,9 +54,10 @@ int printf_b(va_list arg_list)
 
 	while (exp >= 0)
 	{
-		if (next - _pow(2, exp) >= 0)
+		power = _pow(2, exp);
+		if (next >= power)
 		{
-			next -= _pow(2, exp);
+			next -= power;
 			_putchar('1');
 		}
 		else
