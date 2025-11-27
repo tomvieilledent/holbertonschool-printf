@@ -1,5 +1,5 @@
 
-# \_printf project - Holberton School C#25 :exclamation:
+# \_printf project - Holberton School C#28 :exclamation:
 
 ## Description :pushpin:
 
@@ -16,7 +16,7 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 | File name          | % | Description                                                                  |
 | -----------------: | :--: | ---------------------------------------------------------------------------- |
 | [_printf.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/_printf.c)          |      | Contains the main function `_printf()`                                       |
-| [get_format.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/get_format.c)     |      | `get_format()` checks \*format and calls the function needed |
+| [get_format.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/get_format.c)     |      | `get_format()` checks format and calls the function needed |
 | [printf_c.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/printf_c.c)       | %c |  Contains `printf_c()` that prints a character                   |
 | [printf_s.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/printf_s.c)     | %s | Contains `printf_s()`that prints a string
 [printf_d.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/printf_d.c)     | %d %i | Contains `printf_d()`that prints an integer                     |
@@ -74,7 +74,7 @@ To print formated data, use different specifiers in your FORMAT to print:
  - `%b`: to print in binary
  
 ## Exemples :exclamation:
-
+```c
 #include "main.h"
 
 int main(void)
@@ -94,15 +94,16 @@ int main(void)
 
     return 0;
 }
-
+```
 **STDOUT**
-
+```c
 Integer i: 42
 Integer d: -123
 String s: Hello
 Char c: A
 Percent % sign
 Binary b: 1010
+```
 ## Project Authors :dancers:
 - [MOUYSSET Alexandre](https://github.com/alexandre-mouysset)
 - [VIEILLEDENT Tom](https://github.com/tomvieilledent)
