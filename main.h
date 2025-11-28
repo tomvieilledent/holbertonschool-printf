@@ -28,6 +28,9 @@ int printf_d(va_list arg_list);
 int printf_37(va_list arg_list);
 int printf_u(va_list arg_list);
 int printf_b(va_list arg_list);
+int printf_o(va_list arg_list);
+int printf_x(va_list arg_list);
+int printf_X(va_list arg_list);
 
 int _printf(const char *format, ...);
 int (*get_format(char letter))(va_list);
