@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <string.h>
+#include <math.h>
 
 
 
@@ -26,6 +27,7 @@ int printf_s(va_list arg_list);
 int printf_d(va_list arg_list);
 int printf_37(va_list arg_list);
 int printf_u(va_list arg_list);
+int printf_b(va_list arg_list);
 
 int _printf(const char *format, ...);
 int (*get_format(char letter))(va_list);

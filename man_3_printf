@@ -17,9 +17,9 @@ Print ARGUMENTS(s) according to FORMAT, or execute according to OPTION:
 %d     print an integer
 .PP
 %i     print an integer
-.SH AUTHOR
-MOUYSSET Alexandre 
 .PP
-VIEILLEDENT Tom
+%b     print in binary
+.SH AUTHOR
+MOUYSSET Alexandre -- VIEILLEDENT Tom
 .SH SEE ALSO
 man printf
