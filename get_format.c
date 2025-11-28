@@ -15,6 +15,7 @@ int (*get_format(char letter))(va_list)
 		{'i', printf_d},
 		{'d', printf_d},
 		{'u', printf_u},
+		{'o', printf_o},
 		{'b', printf_b},
 		{'%', printf_37},
 		{'\0', NULL}};
