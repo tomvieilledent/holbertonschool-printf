@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_c - Prints a character to stdout
+ * printf_d - Prints an integer to stdout
  * @arg_list: List of arguments
  *
  * Return: Number of characters printed

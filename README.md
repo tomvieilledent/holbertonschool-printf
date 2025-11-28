@@ -23,7 +23,7 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 | [printf_37.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/printf_37.c)         | %% | Contains `printf_37()`that printf '%'                              |
 | [main.h](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/main.h)             |      | Contains all the headers, prototypes and structure needed                    |
 | [man_3_printf](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/man_3_printf)       |      | This is the man page of our _printf                                          |
-| [_putchar.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/_putchar.c)         |      | Contains our own puchar command permitting to print a character              |
+| [_putchar.c](https://github.com/tomvieilledent/holbertonschool-printf/blob/main/_putchar.c)         |      | Contains our own putchar command permitting to print a character              |
 | [flowchart](https://github.com/tomvieilledent/holbertonschool-printf/tree/main/flowchart)         |      | Contains all function's flowchart
 
 ## Flowchart :ocean:
