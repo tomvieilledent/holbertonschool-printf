@@ -31,3 +31,17 @@ int (*get_format(char letter))(va_list)
 	}
 	return (NULL);
 }
+
+/**
+ * Format specifier legend for printf-like functions.
+ * s > string
+ * c > character
+ * i > int
+ * d > deciaml
+ * u > unsignet int
+ * o > octal
+ * x > lower hexadecimal
+ * X > upper hexadecimal
+ * b > binary
+ * % > percent
+ */
